@@ -1,0 +1,16 @@
+﻿Codebook
+
+1) Columns are given descriptive names
+2) Columns that are not “mean” or “std” columns are stripped out of the x_test and x_train data sets
+3) For each dataset ( _train and _test) , the subject (subject_***.txt), activity_code (y_***.txt)  and features (x_***.txt) are combined (columns added together). Lacking a common key, rows are matched by position.
+4) Test and Train are then combined ( _test rows are added to the _train rows)
+5) An new character column  - “Activity_Label” is added to the dataset – it gives a description of the activity_code based on values in the “activity_labels.txt” data set. 
+6) This 'wide' data set is then 'melted' into a narrow data set. Each of the feature columns is recast as a a new column of factors (called variable). The  value is in a new column called value (numeric)
+7) Lastly the data set is summarized to provide the mean of each value for each unique Activity_Code+Subject+Activity_Label+variable combination.
+8) The final product – a data set called tidy_data has the following columns
+Activity_Code		integer
+Subject	integer
+Activity_Label	character
+variable	factor
+mean.activity	numeric
+
