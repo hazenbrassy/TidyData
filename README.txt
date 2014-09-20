@@ -1,10 +1,18 @@
+﻿Tidy Data Project
+
+The data is in text files.
+
+The run_analysis.R script combines the two split data sets, makes the data tidy (in a narrow format) and then writes out a new data set that gives the average of each measurement for each Subject & Activity.
+
+Description of Data
+
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit� degli Studi di Genova.
+DITEN - Universit‡ degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
